@@ -24,12 +24,12 @@ class Entity(object):
 
     def set_sprites(self, name, width, height):
         self.sprites_walk_right = [
-            pygame.transform.scale(pygame.image.load(os.path.join('assets', name, 'R1.png')), (width, height)),
-            pygame.transform.scale(pygame.image.load(os.path.join('assets', name, 'R2.png')), (width, height)),
+            pygame.transform.scale(pygame.image.load(os.path.join('assets', name.lower(), 'R1.png')), (width, height)),
+            pygame.transform.scale(pygame.image.load(os.path.join('assets', name.lower(), 'R2.png')), (width, height)),
         ]
         self.sprites_walk_left = [
-            pygame.transform.scale(pygame.image.load(os.path.join('assets', name, 'L1.png')), (width, height)),
-            pygame.transform.scale(pygame.image.load(os.path.join('assets', name, 'L2.png')), (width, height)),
+            pygame.transform.scale(pygame.image.load(os.path.join('assets', name.lower(), 'L1.png')), (width, height)),
+            pygame.transform.scale(pygame.image.load(os.path.join('assets', name.lower(), 'L2.png')), (width, height)),
         ]
 
     def move(self):
