@@ -17,7 +17,6 @@ class Enemy(Entity):
 
     def move(self):
         Entity.move(self)
-        #TODO: fix circular import
         if self.x > 600:
             self.direction = Direction.LEFT
         if self.x < 0:
