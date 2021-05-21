@@ -1,6 +1,6 @@
 # pygame-cowboy
 
-Simple 2d game to get familiar with pygame and object-oriented in python.
+Simple 2d game to get familiar with pygame and object-oriented python.
 
 ![](img/example.gif)
 
